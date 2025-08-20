@@ -5418,28 +5418,6 @@
         }()
     </script>
 
-    <script>
-    document.addEventListener("DOMContentLoaded", () => {
-    document.querySelectorAll("a").forEach(link => {
-        link.addEventListener("click", e => {
-        const href = link.getAttribute("href");
-        if (href && !href.startsWith("http") && !href.startsWith("#")) {
-            e.preventDefault();
-            // Instead of opening a new page, scroll to a section
-            const target = document.querySelector(href.replace("/", "#"));
-            if (target) {
-            target.scrollIntoView({ behavior: "smooth" });
-            } else {
-            console.warn("Section not found:", href);
-            }
-        }
-        });
-    });
-    });
-    </script>
-
-
-
     <script data-framer-appear-animation="no-preference"></script>
     <link rel="modulepreload" fetchpriority="low" href="https://framerusercontent.com/sites/4qdmFm26sIs9f02LmgIbGB/chunk-JPGLLKOV.mjs">
     <link rel="modulepreload" fetchpriority="low" href="https://framerusercontent.com/sites/4qdmFm26sIs9f02LmgIbGB/chunk-HZL4YIMB.mjs">
